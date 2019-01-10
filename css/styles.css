@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #555;
+    
 
 }
 
@@ -22,7 +22,7 @@ body {
     font-weight: 300;
     position: relative;
     height: 100vh;
-    
+    color: #555;
 }
 
 h3, p, li {text-transform: uppercase;}
