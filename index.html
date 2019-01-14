@@ -1,4 +1,4 @@
-<!Doctype html>
+<!--<!Doctype html>
     <html>
     
     <head>
@@ -58,4 +58,64 @@
     </div>
 <script src="./js/scripts.js"></script>
 </body>
+</html>-->
+
+<!DOCTYPE html> 
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <h1 id="title">Pig Dice</h1>
+    <div class="container">
+      <div class="row">
+        <div class="player-col col-md-4">
+          <h2>Player 1</h2>
+          <hr>
+          <!-- <form id="player-one-form" action="index.html" method="post"> -->
+          <div id="player-one-buttons">
+            <button type="submit" class="btn" name="button" id="player-one-roll">Roll</button>
+            <button type="submit" class="btn" name="button" id="player-one-stay">Stay</button>
+          </div>
+          <!-- </form> -->
+          <h3>Turn Running Total</h3>
+          <div id="player-one-running">
+          </div>
+          <h3>Total Score:</h3>
+          <h4><span id="player-one-score"></span></h4>
+        </div><!--Col closes-->
+        <div class="col-md-4">
+          <div id="dice-image">
+            <img src="img/pig.png" id="dice-pic">
+          </div>
+          <p><span class="player-one-rolls-one">You rolled a 1!</p>
+          <p><span class="player-one-rolls-one">Your turn is over.</p></span>
+          <!-- <p><span class="turn-total"></p> -->
+          <div id="winner">
+          </div><!--Winner closes-->
+        </div><!--Middle col closes-->
+        <div class="player-col col-md-4">
+          <h2>Player 2</h2>
+          <hr>
+          <div id="player-two-buttons">
+            <button type="submit" class="btn" name="button" id="player-two-roll">Roll</button>
+            <button type="submit" class="btn" name="button" id="player-two-stay">Stay</button>
+          </div>
+          <h3>Turn Running Total</h3>
+          <div id="player-two-running">
+          </div>
+          <h3>Total Score:</h3>
+          <h4><span id="player-two-score"></span></h4>
+        </div><!--Col closes-->
+      </div><!--Row closes-->
+    </div><!--Container closes-->
+  </body>
 </html>
